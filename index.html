@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <canvas id="sweetHome" width="400" height="400"></canvas>
+    <script>
+    var canvas = document.getElementById('sweetHome');
+    var canvasHome = canvas.getContext('2d');
+
+    // (x largeur, y longueur)
+
+
+    //Face
+    canvasHome.beginPath();
+    canvasHome.moveTo(100,150);
+    canvasHome.lineTo(100,350);
+    canvasHome.lineTo(300,350);
+    canvasHome.lineTo(300,150);
+    canvasHome.closePath();
+    canvasHome.fillStyle = '#ADD8E5';
+    canvasHome.fill();
+
+    //toit
+    canvasHome.beginPath();
+    canvasHome.moveTo(200,50);
+    canvasHome.lineTo(100,150);
+    canvasHome.lineTo(300,150);
+    canvasHome.closePath();
+    canvasHome.fillStyle = '#D7823E';
+    canvasHome.fill();
+
+    //fenetre gauche
+    canvasHome.beginPath();
+    canvasHome.moveTo(130,170);
+    canvasHome.lineTo(130,210);
+    canvasHome.lineTo(160,210);
+    canvasHome.lineTo(160,170);
+    canvasHome.closePath();
+    canvasHome.fillStyle = '#C9C9C9';
+    canvasHome.fill();
+
+    //fenetre droite
+    canvasHome.beginPath();
+    canvasHome.moveTo(240,170);
+    canvasHome.lineTo(240,210);
+    canvasHome.lineTo(270,210);
+    canvasHome.lineTo(270,170);
+    canvasHome.closePath();
+    canvasHome.fillStyle = '#C9C9C9';
+    canvasHome.fill();
+
+    //porte
+    canvasHome.beginPath();
+    canvasHome.moveTo(175,275);
+    canvasHome.lineTo(175,350);
+    canvasHome.lineTo(230,350);
+    canvasHome.lineTo(230,275);
+    canvasHome.closePath();
+    canvasHome.fillStyle = '#C9C9C9';
+    canvasHome.fill();
+    </script>
+  </body>
+</html>
